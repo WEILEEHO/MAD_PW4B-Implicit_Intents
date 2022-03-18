@@ -15,7 +15,7 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        binding.btnPhone.setOnClickListener { openPhone("tel: +60192185078") }
+        binding.btnPhone.setOnClickListener { openPhone("tel: +60134594684") }
         binding.btnSms.setOnClickListener   { openSms() }
         binding.btnWeb.setOnClickListener   { openWeb() }
         binding.btnMap.setOnClickListener   { openMap() }
@@ -32,7 +32,7 @@ class MainActivity : AppCompatActivity() {
 
     private fun openSms() {
         // TODO(2)
-        val uri = Uri.parse("sms: +60192185078?body=Hello haiya")
+        val uri = Uri.parse("sms: +60134594684?body=Hello")
         val intent = Intent(Intent.ACTION_SENDTO, uri)
 
         startActivity(intent)
@@ -56,7 +56,7 @@ class MainActivity : AppCompatActivity() {
 
     private fun openEmail() {
         // TODO(5)
-        val uri = Uri.parse("mailto:mokch-wm19@student.tarc.edu.my?subject=Demo&body=Hello Haiya")
+        val uri = Uri.parse("mailto:lee86023@gmail.com?subject=Demo&body=Hello")
         val intent = Intent(Intent.ACTION_SENDTO, uri)
 
         startActivity(intent)
